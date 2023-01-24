@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./generate.js"></script>
+    <link rel= "stylesheet" href="./style.css">
+    <title>Document</title>
+
+  </head>
+  <body>
+    <form id="submit-form" method="GET" action="/meme.html" class="form">
+      <label for="meme_top">TOP TEXT</label>
+      <input name="top_text" id="meme_top" type="text" />
+      <p id="topErr"></p>
+      <label for="meme_bot">BOTTOM TEXT</label>
+      <input name="bot_text" id="meme_bot" type="text" />
+      <p id="botErr"></p>
+      <label for = "meme_img">UPLOAD YOUR IMAGE MEMELORD !!!</label>
+      <input name="img_upload" required id="meme_img" type="file" />
+      <p id="imgErr"></p>
+      <button type ="submit">Let's MEME!</button>
+      
+    </form>
+  </body>
+</html>
