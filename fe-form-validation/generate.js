@@ -18,7 +18,7 @@ topInput.addEventListener("change", (event) => {
   const input = event.target.value;
   const isValid = /^.{1,50}$/.test(input);
   
-  
+  console.log(topErr);
   if (isValid) {
     topErr.innerText = "";
     topInput.classList.add("valid");
@@ -48,11 +48,11 @@ botInput.addEventListener("change", (event) => {
 
 imgInput.addEventListener("change", (event) => {
   const input = event.target.value;
-  const isValid =  /([/|.|\w|-])*\.(?:jpg|gif|png)/.test(input);
+  const isValid =  /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/.test(input);
  console.log(isValid);
   console.log(input);
 
-  if (isValid && input.length>0) {
+  if (isValid) {
     imgErr.innerText = "";
     imgInput.classList.add("valid");
     imgInput.classList.remove("invalid");
