@@ -1,5 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -52,9 +58,27 @@ form {
   border-radius: 30px;
   margin: 0 auto;
   margin-top: 100px;
+  
+  border: 30px solid black;
 }
 
 .btn {
     background-color: #008891 !important; 
     border: #575757 1px solid !important;
+}
+
+.errorText {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+  margin-top: 30px;
+  font-family: "impact";
+  text-align: center;
+  font-size: 50PX;
+}
+.label {
+  text-align: center;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
